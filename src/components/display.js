@@ -1,10 +1,34 @@
 import "./css/display.css"
 import Cards from './cards.js'
-import Data from './data'
+import React from "react"
+import axios from "axios"
+import { useNavigate } from "react-router-dom"
+
+ const datafetch = "http://localhost:5000/content"
 
 function Display() {
 
-  const cards = Data.map((item)=>{
+   const[allContent,setContent] = React.useState([])
+
+   const navigate = useNavigate();
+
+
+  React.useEffect(()=>{
+    axios.get(datafetch)
+    .then((res)=>{
+      setContent(res.data)
+    })
+    .catch((e)=>{
+      console.log(e)
+    })
+  },[])
+
+  function HandelClick(){
+    navigate('/typepad')
+  }
+
+
+  const cards = allContent.map((item)=>{
     return(
     
       <Cards
@@ -15,11 +39,13 @@ function Display() {
     )
   })
 
+
   return (
     <div>
       {cards}
-      <div className="login-btn">WRITE A STORY</div>
+      <button onClick={HandelClick} className="createbutton">Create</button>
     </div>
+
   );
 }
 

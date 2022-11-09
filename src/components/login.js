@@ -5,7 +5,7 @@ function login(){
     return(
         <div>
             <h1>Login</h1>
-            <from>
+            <form>
                 <input
                     type="text"
                     placeholder="Username"
@@ -15,7 +15,7 @@ function login(){
                     placeholder="Password"
                 />
                 <button>Login</button>
-            </from>
+            </form>
             <Link to='/signup'>Don't have an account yet? Sign up here</Link>
         </div>
     )

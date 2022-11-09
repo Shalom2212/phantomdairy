@@ -40,7 +40,7 @@
     position:sticky;
     right:140px;
     top: 1px;
-  cursor: all-scroll;
+  /* cursor: all-scroll; */
   }
   .login-btn{
     transition-duration: 0.2s;
@@ -56,6 +56,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+
   
   @media only screen and (min-device-width: 37em) {
     .page {

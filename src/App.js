@@ -9,10 +9,10 @@ import './App.css';
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Login/>}/>
+      <Route path='/' element={<Display/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/typepad' element={<Typepad/>}/>
-      <Route path='/Display' element={<Display/>}/>
+      <Route path='/login' element={<Login/>}/>
     </Routes>
 
   );
