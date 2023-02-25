@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "phantomdairy-frontend",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
