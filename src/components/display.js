@@ -5,7 +5,7 @@ import axios from "axios"
 import { useNavigate } from "react-router-dom"
 
 // const datafetch = "http://localhost:5000/content"
-const datafetch = "https://phantomdairy-api.onrender.com"
+const datafetch = "https://phantomdairy-api.onrender.com/content"
 
 function Display() {
 
