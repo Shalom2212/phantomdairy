@@ -4,7 +4,7 @@ import { useNavigate,Link } from "react-router-dom";
 import {useState} from "react"
 
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://phantomdairy-api.onrender.com";
 
 function Typepad(){
 

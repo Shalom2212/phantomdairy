@@ -5,7 +5,7 @@ import { useNavigate } from "react-router-dom";
 
 
 
-axios.defaults.baseURL = "http://localhost:5000";
+axios.defaults.baseURL = "https://phantomdairy-api.onrender.com";
 
 function Signup(){
 
